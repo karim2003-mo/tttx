@@ -13,7 +13,7 @@ def run_view_bot(username, password, reel_url, watch_seconds=5,numviews=50):
     options.add_experimental_option("mobileEmulation", mobile_emulation)
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--window-size=400,800")
-    # options.add_argument("--headless")  # شغل ده لو عايز من غير نافذة
+    options.add_argument("--headless")  # شغل ده لو عايز من غير نافذة
 
     driver = webdriver.Chrome(options=options)
 
